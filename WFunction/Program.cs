@@ -8,24 +8,36 @@ namespace WFunction
     {
         static void Main(string[] args)
         {
-            //python integration
-            Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", @"C:\Users\Ева\AppData\Local\Programs\Python\Python39\python39.dll", EnvironmentVariableTarget.Process);
+            /// <summary>
+            /// Weierstrass function
+            /// Like other fractals, the function exhibits self-similarity:
+            /// every zoom  is similar to the global plot.
+            /// 
+            /// </summary>
             
+            
+            //python integration
+            Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", 
+                                            @"C:\Users\Ева\AppData\Local\Programs\Python\Python39\python39.dll", 
+                                                EnvironmentVariableTarget.Process);
             int size = 1000;
             int startX = -1;
             int stopX = 1;
 
             List<float> xValues = new List<float>();
 
-            for (float i = startX; i < stopX; i += (float)(stopX - startX) / size)
-            {
+            for (float i = startX; i < stopX; i += (float)(stopX - startX) / size) {
                 xValues.Add(i);
             } 
             
             /// <summary>
-            /// var xValues = np.arange(startX,stopX,(float)(stopX-startX)/size);
+            /// <param name="xValues">
+            ///     Also can loof like:
+            ///             var xValues = np.arange(startX,stopX,(float)(stopX-startX)/size);
+            ///
+            ///     It's the analogue NumPy in C# (NumSharp)
+            /// </param>
             /// 
-            /// It's the analogue NumPy in C# (NumSharp)
             /// </summary>
             
             float[] x = xValues.ToArray();
