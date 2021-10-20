@@ -6,9 +6,13 @@ everywhere but differentiable nowhere. It is an example
 of a fractal curve. It is named after its discoverer 
 Karl Weierstrass.
 
-### _Visualisation_
+### _Visualisation_  📊
 
 Visualization done with integration Python in C#
+
+If you want to integrate:
+
+[![nuget](https://img.shields.io/nuget/v/pythonnet)](https://www.nuget.org/packages/pythonnet/)
 
 ```cs
 Environment.SetEnvironmentVariable("PYTHONNET_PYDLL",
@@ -37,7 +41,7 @@ With zoom:
 
 ![image2](https://raw.githubusercontent.com/evabronskayaa/WFunction/master/image2.png)
 
-### _Function_
+### _Function_ 📈💻
 In Weierstrass's original paper, the function was defined as a Fourier series:
 
 ![image3](https://wikimedia.org/api/rest_v1/media/math/render/svg/da584736d393e241fa5fa265cd17c06bc73f316e)
@@ -49,3 +53,4 @@ for (int n = 0; n < size; n++)
     res += (float) (Math.Cos(Math.Pow(3, n) * Math.PI * x) / Math.Pow(2, n));
 }
 ```
+
