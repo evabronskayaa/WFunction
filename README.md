@@ -29,14 +29,18 @@ using (Py.GIL())
 }
 ```
 
-Plot of Weierstrass function over the interval [−2; 2]
+Plot of Weierstrass function over the interval [−2; 2]:
 
 ![image1](https://raw.githubusercontent.com/evabronskayaa/WFunction/master/image1.png)
+
+With zoom:
+
+![image2](https://raw.githubusercontent.com/evabronskayaa/WFunction/master/image2.png)
 
 ### _Function_
 In Weierstrass's original paper, the function was defined as a Fourier series:
 
-![image2](https://wikimedia.org/api/rest_v1/media/math/render/svg/da584736d393e241fa5fa265cd17c06bc73f316e)
+![image3](https://wikimedia.org/api/rest_v1/media/math/render/svg/da584736d393e241fa5fa265cd17c06bc73f316e)
 
 ```cs
 float res = 0;
