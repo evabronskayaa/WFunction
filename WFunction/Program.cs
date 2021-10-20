@@ -19,7 +19,7 @@ namespace WFunction
             
             //python integration
             Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", 
-                                            @"C:\Users\Ева\AppData\Local\Programs\Python\Python39\python39.dll", 
+                                               @"path to python39.dll or another version", 
                                                 EnvironmentVariableTarget.Process);
             int size = 10000;
             int startX = -2;
