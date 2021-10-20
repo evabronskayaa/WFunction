@@ -12,7 +12,7 @@ Visualization done with integration Python in C#
 
 ```cs
 Environment.SetEnvironmentVariable("PYTHONNET_PYDLL",
-                                    @"C:\Users\Ева\AppData\Local\Programs\Python\Python39\python39.dll",
+                                    @"path to python39.dll or another version",
                                     EnvironmentVariableTarget.Process);
 ```
 
@@ -29,7 +29,7 @@ using (Py.GIL())
 }
 ```
 
-Plot of Weierstrass function over the interval [−2, 2]
+Plot of Weierstrass function over the interval [−2; 2]
 
 ![image1](https://raw.githubusercontent.com/evabronskayaa/WFunction/master/image1.png)
 
